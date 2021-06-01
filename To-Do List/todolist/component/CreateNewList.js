@@ -3,15 +3,14 @@ import { Text, View } from 'react-native';
 
 import styles from '../style/style'
 
-class Home extends Component {
+class CreateNewList extends Component {
     render() {
         return(
             <View style={styles.view}>
-                <Text style={styles.title}>To-Do List</Text>
-                <Text style={styles.subtitle}>Arraste para o lado para começar</Text>
+                <Text>Nova lista</Text>
             </View>
         );
     }
 }
 
-export default Home;
+export default CreateNewList;
