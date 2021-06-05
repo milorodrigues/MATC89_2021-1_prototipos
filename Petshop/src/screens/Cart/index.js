@@ -1,8 +1,11 @@
 import React from 'react';
 import { FlatList } from 'react-native';
 
+import Default from '../Default';
 import StatusCart from '../../components/StatusCart';
 import Item from '../../components/Item';
+
+import { colors } from '../../style';
 
 const services = [
     {
@@ -39,14 +42,14 @@ const Cart = () => {
     const total = services.reduce((sum, { price, quantity }) => sum + (price * quantity), 0);
 
     return (
-        <>
+        <Default statusBarColor={colors.purple}>
             <StatusCart total={total}/>
             <FlatList
                 data={services}
                 keyExtractor={({id}) => String(id)}
                 renderItem={({item}) => <Item {...item}/>}
             />
-        </>
+        </Default>
     )
 }
 

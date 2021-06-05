@@ -1,7 +1,10 @@
 import React from 'react';
 import { FlatList } from 'react-native';
 
+import Default from '../Default';
 import Item from '../../components/Item';
+
+import { colors } from '../../style';
 
 const services = [
     {
@@ -32,13 +35,13 @@ const services = [
 
 const Services = () => {
     return (
-        <>
+        <Default statusBarColor={colors.purple}>
             <FlatList
                 data={services}
                 keyExtractor={({id}) => String(id)}
                 renderItem={({item}) => <Item {...item} expansible/>}
             />
-        </>
+        </Default>
     )
 }
 
