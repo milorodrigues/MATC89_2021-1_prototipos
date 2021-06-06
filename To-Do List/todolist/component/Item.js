@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TextInput } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 
 import styles from '../style/style'
@@ -9,7 +9,7 @@ class Item extends Component{
 
     state = {
         text: '',
-        status: false
+        status: false,
     }
 
     constructor(props) {
@@ -22,6 +22,7 @@ class Item extends Component{
             <View style={itemStyles.view}>
                 <CheckBox />
                 <Text style={itemStyles.text}>{this.state.text}</Text>
+                <TextInput/>
             </View>
         );
     }
