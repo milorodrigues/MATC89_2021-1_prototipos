@@ -8,7 +8,7 @@ import {
     StyleSheet,
     View,
 } from 'react-native';
- 
+
 import Item from './Item'
 
 import styles from '../style/style'
