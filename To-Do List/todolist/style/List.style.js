@@ -1,51 +1,45 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-    view: {
+    container: {
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '100%',
         paddingVertical: 25
     },
-    text: {
-        fontSize: 20
-    },
     title: {
         color: '#035087',
         fontSize: 25,
         fontWeight: 'bold',
-        marginVertical: 10
+        marginVertical: 10,
+        textAlign: 'center'
     },
-    container: {
-        padding: 20,
+
+
+
+    listContainer: {
+        width: '90%',
+        marginVertical: 15,
+        flexGrow: 1
+    },
+
+
+
+    inputContainer: {
+        flexDirection: 'row',
+        width: '100%',
+        marginTop: 15
     },
     field: {
         borderWidth: 1,
         borderColor: '#dcdcdc',
-        padding: 20,
         fontSize: 20,
-        color: '#000000',
+        color: '#000000', // texto
+        backgroundColor: '#ffffff',
+        paddingHorizontal: 10,
+        paddingVertical: 3,
         borderRadius: 5,
-        // flex: 1,
+        flex: 1,
         marginRight: 10,
-    },
-    button: {
-        backgroundColor: '#00cc99',
-        padding: 5,
-        borderRadius: 5,
-        justifyContent: 'center',
-    },
-    buttonText: {
-        color: '#fdfdfd',
-    },
-    item: {
-        borderWidth: 1,
-        borderColor: '#dcdcdc',
-        padding: 10,
-        marginTop: 15,
-        borderRadius: 3,
-    },
-    form: {
-        flexDirection: 'row',
     },
 });

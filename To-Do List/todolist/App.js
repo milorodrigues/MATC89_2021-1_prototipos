@@ -13,9 +13,9 @@ class App extends Component {
   render() {
     return(
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Home">
-          <Drawer.Screen name="Home" component={Home} />
-          <Drawer.Screen name="List" component={List} />
+        <Drawer.Navigator initialRouteName="Home" backBehavior="history">
+            <Drawer.Screen name="Home" component={Home} />           
+            <Drawer.Screen name="List" component={List} />
         </Drawer.Navigator>
       </NavigationContainer>
     );

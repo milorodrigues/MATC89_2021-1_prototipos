@@ -1,4 +1,5 @@
 node_modules/
+android/
 .expo/
 npm-debug.*
 *.jks
@@ -7,6 +8,9 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
+*.psd
+*.zip
+
 web-build/
 
 # macOS
