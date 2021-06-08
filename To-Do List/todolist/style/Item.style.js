@@ -6,13 +6,23 @@ export default StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '100%',
-        marginVertical: 5
+        marginVertical: 5,
+        padding: 4
     },
 
 
     text: {
-        fontSize: 20,
+        fontSize: 16,
+        textDecorationStyle: 'solid',
         flex: 1
+    },
+    textChecked: {
+        textDecorationLine: 'line-through',
+        color: '#787878'
+    },
+    textUnchecked: {
+        textDecorationLine: 'none',
+        color: '#000000'
     },
 
 

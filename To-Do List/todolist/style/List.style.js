@@ -33,7 +33,7 @@ export default StyleSheet.create({
     field: {
         borderWidth: 1,
         borderColor: '#dcdcdc',
-        fontSize: 20,
+        fontSize: 16,
         color: '#000000', // texto
         backgroundColor: '#ffffff',
         paddingHorizontal: 10,

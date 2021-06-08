@@ -43,8 +43,9 @@ class List extends Component {
         this.setState({tasks: this.state.tasks});
     }
 
-    deleteTask = () => {
-        
+    deleteTask = (id) => {
+        this.state.tasks = this.state.tasks.filter(task => task.id != id);
+        this.setState({tasks: this.state.tasks});
     }
 
     handleAdd = (newTask) => {
